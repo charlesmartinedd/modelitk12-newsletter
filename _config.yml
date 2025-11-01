@@ -8,12 +8,6 @@ baseurl: "/modelitk12-newsletter"
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 
-# Collections
-collections:
-  posts:
-    output: true
-    permalink: /newsletter/:year/:month/:day/:title/
-
 # Defaults
 defaults:
   - scope:
