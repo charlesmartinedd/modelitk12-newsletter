@@ -51,64 +51,66 @@ model = genai.GenerativeModel('gemini-2.5-flash-image')
 
 # Newsletter hero prompts
 heroes = {
-    "week1-hero": """Create a vibrant, photorealistic image of a modern middle school science classroom:
+    "week1-hero": """Create a vibrant, photorealistic close-up image of a modern middle school science classroom:
+
+COMPOSITION: Centered, tight framing on students and screens - NO black bars, NO letterboxing
 
 SUBJECTS:
-- 4-5 diverse students (ages 11-14: African American, Latino, Asian, Caucasian)
-- Students are excited, engaged, collaborating
-- Some pointing at screens, others discussing animatedly
+- 3-4 diverse students (ages 11-14: African American, Latino, Asian)
+- Close-up view, students fill the frame
+- Excited, engaged, collaborating around a laptop
+- Pointing at screen, discussing animatedly
 
-TECHNOLOGY:
-- Tablets and laptops on desks
-- Screens showing colorful biological cell models
-- Interactive molecular pathway diagrams visible on displays
-- Clear technology integration in learning
+TECHNOLOGY (PROMINENT):
+- Laptop in foreground showing colorful biological cell model
+- Interactive molecular pathway diagram clearly visible on screen
+- Bright, colorful scientific visualizations
 
 SETTING:
-- Bright modern classroom
-- Natural sunlight from large windows
-- Clean, contemporary educational environment
-- Professional but inviting atmosphere
+- Bright modern classroom (background)
+- Natural sunlight, professional educational environment
+- Focus on students and technology (not empty space)
 
 COLOR PALETTE:
-- Navy blue (#030C3C) and bright blue (#0F6ACE) accents
-- Natural classroom colors (wood, whites, neutrals)
-- Colorful scientific visualizations on screens
-- Warm, inspiring lighting
+- Navy blue (#030C3C) and bright blue (#0F6ACE) prominent in displays
+- Colorful scientific visualizations (reds, blues, greens)
+- Warm skin tones and natural classroom colors
 
-MOOD: Inspiring, collaborative, future-ready science education
-STYLE: Professional educational photography, natural lighting, high quality, 16:9 wide format
-FOCUS: Students actively engaged with computational biology tools""",
+MOOD: Inspiring, collaborative, exciting science education
+STYLE: Professional educational photography, tight composition, NO EMPTY SPACE, NO BLACK BARS
+FOCUS: Students actively engaged with computational biology - FILL THE ENTIRE FRAME""",
 
-    "week2-hero": """Create a professional scientific research image:
+    "week2-hero": """Create a professional close-up image of Cell Collective platform:
+
+COMPOSITION: Tight framing on screen content - NO black bars, NO letterboxing, FILL ENTIRE FRAME
 
 MAIN ELEMENT:
-- Large professional monitor/display showing Cell Collective platform
-- Screen displays intricate biological network diagrams
+- Close-up of monitor showing Cell Collective platform
+- Screen FILLS THE ENTIRE IMAGE - no empty space
+- Intricate biological network diagram prominently displayed
 - Colorful interactive cellular models with nodes and connections
-- Complex systems biology visualizations clearly visible
 
-NETWORK VISUALIZATION:
-- Interconnected pathways with blue, teal, and cyan nodes
-- Molecular interactions shown as connecting lines
-- Scientific precision and sophistication
-- Multiple biological components in network
+NETWORK VISUALIZATION (DETAILED):
+- Interconnected pathways with navy blue (#030C3C) and bright blue (#0F6ACE) nodes
+- Molecular interactions as connecting lines
+- Light blue (#38aefd) accents throughout
+- Complex, beautiful systems biology visualization
+- Multiple biological components clearly visible
 
 SETTING:
-- Clean modern research laboratory or workspace
-- Professional scientific environment
-- Subtle research equipment in soft focus background
-- Contemporary, cutting-edge aesthetic
+- Modern professional display
+- Soft professional lighting on screen
+- No black bars, no empty space - ZOOM IN ON THE VISUALIZATION
 
 COLOR PALETTE:
 - Navy blue (#030C3C) and bright blue (#0F6ACE) dominant
-- Light blue (#38aefd) accents in visualizations
-- Professional scientific color scheme
-- Clean whites and modern grays
+- Light blue (#38aefd) network connections
+- Colorful biological components (greens, reds, purples)
+- High contrast, visually striking
 
-MOOD: Cutting-edge research, scientific innovation, systems biology
-STYLE: Professional scientific photography, soft lighting, high-tech aesthetic, 16:9 wide format
-FOCUS: Cell Collective platform interface showcasing biological complexity"""
+MOOD: Cutting-edge research, scientific innovation, beautiful complexity
+STYLE: Professional screen capture, tight framing, NO EMPTY SPACE, NO BLACK BARS
+FOCUS: Cell Collective network visualization - FILL ENTIRE IMAGE WITH COLORFUL BIOLOGY"""
 }
 
 results = []
